@@ -1,0 +1,114 @@
+﻿  AlgoMMC.cpp
+C:\Users\David\Desktop\CNAM\CardGame\Deck.h(141,46): warning C4244: '+=' : conversion de 'double' en 'float', perte possible de données
+  (compiler le fichier source 'AlgoMMC.cpp')
+  
+C:\Users\David\Desktop\CNAM\CardGame\AlgoMMC.cpp(49,79): warning C4267: 'argument' : conversion de 'size_t' en '_Ty', perte possible de données
+C:\Users\David\Desktop\CNAM\CardGame\AlgoMMC.cpp(49,79): warning C4267:         with
+C:\Users\David\Desktop\CNAM\CardGame\AlgoMMC.cpp(49,79): warning C4267:         [
+C:\Users\David\Desktop\CNAM\CardGame\AlgoMMC.cpp(49,79): warning C4267:             _Ty=int
+C:\Users\David\Desktop\CNAM\CardGame\AlgoMMC.cpp(49,79): warning C4267:         ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xhash(118,62): error C2064: le terme ne correspond pas à une fonction qui prend 1 arguments
+  (compiler le fichier source 'AlgoMMC.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xhash(118,62):
+      le contexte d’instanciation du modèle (le plus ancien) est
+          C:\Users\David\Desktop\CNAM\CardGame\AlgoMMC.h(11,34):
+          voir la référence à l'instanciation classe modèle 'std::unordered_map<Card,int,std::hash<Card>,std::equal_to<Card>,std::allocator<std::pair<const Card,int>>>' en cours de compilation
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(436,29):
+          pendant la compilation de la fonction membre classe modèle 'int &std::unordered_map<Card,int,std::hash<Card>,std::equal_to<Card>,std::allocator<std::pair<const Card,int>>>::at(const Card &)'
+              C:\Users\David\Desktop\CNAM\CardGame\AlgoMMC.cpp(47,33):
+              voir la première référence à « std::unordered_map<Card,int,std::hash<Card>,std::equal_to<Card>,std::allocator<std::pair<const Card,int>>>::at » dans « AlgoMMC::changeOneCard »
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(437,60):
+          pendant la compilation de la fonction membre classe modèle 'size_t std::_Uhash_compare<_Kty,_Hasher,_Keyeq>::operator ()<Card>(const _Keyty &) noexcept(<expr>) const'
+          with
+          [
+              _Kty=Card,
+              _Hasher=std::hash<Card>,
+              _Keyeq=std::equal_to<Card>,
+              _Keyty=Card
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xhash(141,72):
+          voir les informations de référence sur le modèle de variable 'const bool _Nothrow_hash<std::hash<Card>,Card>' en cours de compilation
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xhash(118,5): error C2056: expression non conforme
+  (compiler le fichier source 'AlgoMMC.cpp')
+  
+  CardGame.cpp
+C:\Users\David\Desktop\CNAM\CardGame\Deck.h(141,46): warning C4244: '+=' : conversion de 'double' en 'float', perte possible de données
+  (compiler le fichier source 'CardGame.cpp')
+  
+C:\Users\David\Desktop\CNAM\CardGame\CardGame.cpp(39,23): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory(1531,15): error C2280: 'std::hash<Card>::hash(void)' : tentative de référencement d'une fonction supprimée
+  (compiler le fichier source 'CardGame.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\type_traits(2326,1):
+      le compilateur a généré 'std::hash<Card>::hash' ici
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\type_traits(2326,1):
+      'std::hash<Card>::hash(void)' : la fonction a été supprimée implicitement, car un classe de base appelle une fonction supprimée ou inaccessible 'std::_Conditionally_enabled_hash<_Kty,false>::_Conditionally_enabled_hash(void)'
+          with
+          [
+              _Kty=Card
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\type_traits(2312,5):
+      'std::_Conditionally_enabled_hash<_Kty,false>::_Conditionally_enabled_hash(void)' : la fonction a été supprimée explicitement
+          with
+          [
+              _Kty=Card
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xmemory(1531,15):
+      le contexte d’instanciation du modèle (le plus ancien) est
+          C:\Users\David\Desktop\CNAM\CardGame\AlgoMMC.h(11,34):
+          voir la référence à l'instanciation classe modèle 'std::unordered_map<Card,int,std::hash<Card>,std::equal_to<Card>,std::allocator<std::pair<const Card,int>>>' en cours de compilation
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(61,30):
+          voir la référence à l'instanciation classe modèle 'std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>' en cours de compilation
+          with
+          [
+              _Kty=Card,
+              _Ty=int,
+              _Hasher=std::hash<Card>,
+              _Keyeq=std::equal_to<Card>,
+              _Alloc=std::allocator<std::pair<const Card,int>>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xhash(330,56):
+          voir la référence à l'instanciation classe modèle 'std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>' en cours de compilation
+          with
+          [
+              _Kty=Card,
+              _Ty=int,
+              _Hasher=std::hash<Card>,
+              _Keyeq=std::equal_to<Card>,
+              _Alloc=std::allocator<std::pair<const Card,int>>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(29,29):
+          voir la référence à l'instanciation classe modèle 'std::_Uhash_compare<_Kty,_Hasher,_Keyeq>' en cours de compilation
+          with
+          [
+              _Kty=Card,
+              _Hasher=std::hash<Card>,
+              _Keyeq=std::equal_to<Card>
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xhash(128,5):
+          pendant la compilation de la fonction membre classe modèle 'std::_Uhash_compare<_Kty,_Hasher,_Keyeq>::_Uhash_compare(void) noexcept(false)'
+          with
+          [
+              _Kty=Card,
+              _Hasher=std::hash<Card>,
+              _Keyeq=std::equal_to<Card>
+          ]
+              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\unordered_map(101,30):
+              voir la première référence à « std::_Uhash_compare<_Kty,_Hasher,_Keyeq>::_Uhash_compare » dans « std::unordered_map<Card,int,std::hash<Card>,std::equal_to<Card>,std::allocator<std::pair<const Card,int>>>::unordered_map »
+          with
+          [
+              _Kty=Card,
+              _Hasher=std::hash<Card>,
+              _Keyeq=std::equal_to<Card>
+          ]
+              C:\Users\David\Desktop\CNAM\CardGame\AlgoMMC.h(18,1):
+              voir la première référence à « std::unordered_map<Card,int,std::hash<Card>,std::equal_to<Card>,std::allocator<std::pair<const Card,int>>>::unordered_map » dans « AlgoMMC::AlgoMMC »
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\xhash(130,18):
+          voir la référence à l'instanciation de la fonction modèle 'std::_Compressed_pair<_Hasher,std::_Compressed_pair<_Keyeq,float,true>,true>::_Compressed_pair<std::_Zero_then_variadic_args_t,float>(std::_Zero_then_variadic_args_t,std::_Zero_then_variadic_args_t &&,float &&) noexcept(false)' en cours de compilation
+          with
+          [
+              _Hasher=std::hash<Card>,
+              _Keyeq=std::equal_to<Card>
+          ]
+  
+  Génération de code en cours...
